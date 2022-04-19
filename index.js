@@ -17,4 +17,6 @@ mongoose
   .connect(process.env.DATABASE_URL, { useNewUrlParser: true })
   .then(() => console.log("Successful"))
   .catch((err) => console.log(err));
-app.listen(PORT, () => console.log("index started"));
+app.listen(PORT, () =>
+  console.log(`app listening on http://localhost:${PORT}`)
+);
