@@ -14,4 +14,4 @@ const subscriberSchema = new mongoose.Schema({
     default: Date.now,
   },
 });
-export default subscriberSchema;
+export default mongoose.model("Subscriber", subscriberSchema);
