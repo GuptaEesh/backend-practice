@@ -19,11 +19,11 @@
   },
   "homepage": "https://github.com/GuptaEesh/backend-practice#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "mongoose": "^6.3.0"
   },
   "devDependencies": {
-    "dotenv": "^16.0.0",
     "nodemon": "^2.0.15"
   }
 }
