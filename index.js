@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import express from "express";
 import subscribersRouter from "./routes/subscribers.js";
+
 dotenv.config();
 // const db = mongoose.connection;
 // db.on("error", (error) => console.error(error));
@@ -11,6 +12,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/subscribers", subscribersRouter);
+app.get("/hello", (req, res) => res.send("Hello from server"));
 mongoose
   .connect(process.env.DATABASE_URL, { useNewUrlParser: true })
   .then(() => console.log("Successful"))
