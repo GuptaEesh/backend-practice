@@ -1,7 +1,6 @@
-const express = require("express");
+import express from "express";
+import Subscriber from "../models/subscriber.js";
 const router = express.Router();
-const Subscriber = require("../models/subscriber");
-
 //Getting all
 router.get("/", async (req, res) => {
   try {
@@ -66,5 +65,4 @@ async function getSubscriber(req, res, next) {
   res.subscriber = subscriber;
   next();
 }
-
-module.exports = router;
+export default router;

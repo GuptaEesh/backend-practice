@@ -1,8 +1,8 @@
-require("dotenv").config();
-const express = require("express");
-const mongoose = require("mongoose");
-const subscribersRouter = require("./routes/subscribers");
-
+import dotenv from "dotenv";
+import mongoose from "mongoose";
+import express from "express";
+import subscribersRouter from "./routes/subscribers.js";
+dotenv.config();
 // const db = mongoose.connection;
 // db.on("error", (error) => console.error(error));
 // db.once("open", () => console.log("Connected to database"));

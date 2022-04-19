@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 const subscriberSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -14,4 +14,4 @@ const subscriberSchema = new mongoose.Schema({
     default: Date.now,
   },
 });
-module.exports = mongoose.model("Subscriber", subscriberSchema);
+export default subscriberSchema;
